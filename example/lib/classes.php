@@ -2,12 +2,13 @@
 
 namespace basicas;
 
-// comentario simple con un texto que vamos a comprobar si Doxygen lo incluye
-
 /**
  * @file
  * Ejemplo de código PHP para documentar con Doxygen.
  * @author David GB
+ * @version 1.0
+ * @since 2024-01-12
+ * @copyright David G. Bonacho
  */
 
 /**
@@ -103,7 +104,8 @@ class Usuario {
 
 
 /**
- * Clase para pintar una página del sistem
+ * Clase para pintar una página del sistema
+ * @link https://www.tizedit.com
  */
 
 class paintPage {
@@ -121,6 +123,30 @@ class paintPage {
 
     public function paint() {
         // Lógica para pintar la página
+    }
+
+}
+
+/**
+ * Clase que no debe documentarse
+ * @ignore 
+ */
+
+ class noDocumentar {
+    /**
+     * @var string Null var
+     */
+    public $nullvar;
+
+    /**
+     * Constructor de la clase no documentada
+     */
+    public function __construct($nombre) {
+        $this->nullvar = $nombre;
+    }
+
+    public function myfunct() {
+        // Lógica 
     }
 
 }
