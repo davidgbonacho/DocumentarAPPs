@@ -56,6 +56,8 @@ Muy útil para arrancar desde un entorno web la documentación es generar un arc
 </html>
 ```
 
+[Continuar con Tips Docu PHP](TipsDocuPHP.MD)
+
 ---
 `título:` Documentar Apps \
 `autor:` David G. Bonacho &nbsp;&nbsp;  [www.tizedit.com](https://www.tizedit.com)
