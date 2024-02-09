@@ -15,7 +15,15 @@ Sin embargo, si el procedimiento de creación de la documentación no está auto
 Existen varios sistemas para documentar. Nos centraremos en Doxygen por diferentes motivos (siendo el principal el que se trata de una aplicación [Comparativa Doxygen / PHPdocumentator](https://www.saashub.com/compare-doxygen-vs-phpdocumentor-2)) y no un repositorio PHP.
 
 ### Doxywizard
-Abriendo la aplicación Doxywizard es posible realizar la configuración completa del proyecto que deseamos documentar
+Abriendo la aplicación Doxywizard es posible realizar la configuración completa del proyecto que deseamos documentar. Doxygen puede utilizarse con todas sus características usando su CLI por línea de comando. También puede editarse el fichero *Doxyfile* con un editor de texto y cambiar ahí los valores (Es el mismo archivo que se edita con Doxywizard). 
+
+#### Tipos de archivos a incluir en el proyecto
+Características como los tipos de archivo han de editarse directamente en el Doxyfile comoquiera que Doxywizard no las contempla. Para ello, basta con buscar *FILE_PATTERNS* e incluir al final el tipo de archivo que se desea incluir.
+```
+                         *.ice\
+                         *.html
+```
+Con esta acción se incluirá la orden de incluir los archivos html
 
 ### Crear proyecto
 *abrimos la aplicación Doxywizard*
