@@ -1,6 +1,6 @@
 <?php
 
-namespace basicas\masclases;
+namespace masclases;
 
 /**
  * Clase para mover un objeto en pantalla
@@ -15,6 +15,7 @@ class Mover {
 
     /**
      * Crear constructor
+     * @param int $mode modo de movimiento (int)
      */
     public function __construct($mode) {
         $this->modo = $mode;
@@ -22,8 +23,9 @@ class Mover {
 
     /**
      * Un método cualquiera
-     * @param int tipo 
-     * @param int otro tipo
+     * @param int $tipo tipo 
+     * @param int $otro otro tipo
+     * @return boolean true si correcta
      */
     static function mover($tipo, $otro) {   
         return $tipo . $otro;
@@ -53,6 +55,7 @@ class acceso {
 
      /**
       * Iniciar el acceso a la bbdd
+      * @return array resultado de la consulta 
       */
       public function iniciar() {
         //

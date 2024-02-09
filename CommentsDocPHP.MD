@@ -47,7 +47,7 @@ La documentación podrá iniciarse bien accediendo al archivo inicial de la carp
 
 ### Incluir un archivo cualquiera como comienzo de la documentación
 Muy útil para arrancar desde un entorno web la documentación es generar un archivo index.html en la raíz de la misma el cual contenga un redireccionamiento directo al archivo que quieras que se muestre en primer lugar al acceder (sin tener que configurar un MD en el fichero de configuración ni nada por el estilo) para ello, basta con generar este código en el archivo index.html situado en la raíz:
-```
+```html
 <html>
 <head>
     <meta http-equiv="refresh" content="0; url=html/{HTML-file}">

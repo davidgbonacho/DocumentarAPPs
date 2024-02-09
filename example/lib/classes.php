@@ -10,10 +10,13 @@ namespace basicas;
  * @since 2024-01-12
  * @copyright David G. Bonacho
  * 
+ * @link https://www.tizedit.com
+ * 
  */
 
 /**
  * Clase principal que representa un sistema.
+ * @package classes
  */
 class Sistema {
     /**
@@ -43,9 +46,12 @@ class Sistema {
      * Realiza una acción específica en el sistema.
      *
      * @param string $accion Acción a realizar.
+     * @return boolean true si realizada false si no realizada
      */
     public function realizarAccion($accion) {
         // Lógica para realizar la acción.
+        $status = true; // dependiendo de acción
+        return $status;
     }
 
     /**
@@ -129,18 +135,18 @@ class paintPage {
 }
 
 /**
- * Clase que no debe documentarse
- * @ignore 
+ * Otra nueva clase
+ * @author Leonard Berstein
  */
 
- class noDocumentar {
+ class anotherClass {
     /**
      * @var string Null var
      */
     public $nullvar;
 
     /**
-     * Constructor de la clase no documentada
+     * Constructor de la clase 
      */
     public function __construct($nombre) {
         $this->nullvar = $nombre;
